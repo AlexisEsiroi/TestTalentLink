@@ -13,8 +13,8 @@ trigger:
 - main
 
 schedules:
-- cron: "*/5 * * * *"
-  displayName: Every 5 minutes
+- cron: "*/1 * * * *"
+  displayName: Every 1 minute
   branches:
     include:
     - '*'
