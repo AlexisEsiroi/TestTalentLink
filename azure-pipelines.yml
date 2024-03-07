@@ -13,7 +13,7 @@ trigger:
 - main
 
 schedules:
-- cron: "0 0 * * *"
+- cron: "*/1 0 * * *"
   displayName: Every day
   branches:
     include:
