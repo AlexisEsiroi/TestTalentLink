@@ -3,6 +3,12 @@
 # Add steps that build, run tests, deploy, and more:
 # https://aka.ms/yaml
 
+parameters:
+- name: message
+  displayName: Message
+  type: string
+  default: "test varianle"
+
 trigger:
 - main
 
@@ -17,7 +23,7 @@ pool:
   vmImage: ubuntu-latest
 
 steps:
-- script: echo Hello, world!
+- script: echo "$(message)"
   displayName: 'Run a one-line script'
 
 - script: |
