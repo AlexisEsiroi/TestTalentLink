@@ -14,7 +14,13 @@ trigger:
 
 schedules:
 - cron: "*/1 * * * *"
-  displayName: Every day
+  displayName: Every 1 minutes
+  branches:
+    include:
+    - '*'
+  always: True
+- cron: "*/5 * * * *"
+  displayName: Every 5 minutes
   branches:
     include:
     - '*'
